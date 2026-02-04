@@ -35,13 +35,14 @@ updates:
     groups:
       git-submodules-dependencies:
         patterns:
-          "*"
+          - "*"
     labels:
-      "dependencies"
+      - "dependencies"
     commit-message:
       prefix: "fix(deps)"
       include: "scope"
-    reviewers: "thedevmystic"
+    reviewers:
+      - "thedevmystic"
 
   # Maintain GitHub Actions
   - package-ecosystem: "github-actions"
@@ -53,13 +54,14 @@ updates:
     groups:
       github-actions-dependencies:
         patterns:
-          "*"
+          - "*"
     labels:
-      "dependencies"
+      - "dependencies"
     commit-message:
       prefix: "fix(deps)"
       include: "scope"
-    reviewers: "thedevmystic"
+    reviewers:
+      - "thedevmystic"
 
   # Maintain NPM
   - package-ecosystem: "npm"
@@ -72,10 +74,11 @@ updates:
       npm-dependencies:
         applies-to: version-updates
         patterns:
-          "*"
+          - "*"
     labels: 
-      "dependencies"
+      - "dependencies"
     commit-message:
       prefix: "fix(deps)"
       include: "scope"
-    reviewers: "thedevmystic"
+    reviewers:
+      - "thedevmystic"
