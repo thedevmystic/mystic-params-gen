@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Pre-Commit configuration.
+- Clang format configuration.
 - Changelog file.
 - .gitignore to ignore noise in git history.
 - VERSION file to keep track of current version.
