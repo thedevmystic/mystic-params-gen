@@ -1,0 +1,38 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+
+# --- Base ---
+Standard: Latest                 # C++20/23 compatibility
+ColumnLimit: 100                 # 100 column limit for breathability
+
+# --- Indentation & Tabs ---
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+
+# --- Braces & Layout ---
+BreakBeforeBraces: Attach        # K&R Style
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: All
+SeparateDefinitionBlocks: Always # Adds empty lines between functions/classes
+FixNamespaceComments: true       # Adds // namespace name at the end
+AccessModifierOffset: -2         # Keeps private/public on same indent as class
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 2
+
+# --- Alignment & Whitespace ---
+PointerAlignment: Left           # int* p;
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignTrailingComments: true
+SpaceAfterCStyleCast: false
+SpaceBeforeRangeBasedForLoopColon: true
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+ReflowComments: true
+
+# --- Sorting ---
+SortIncludes: true
+IncludeBlocks: Preserve
+...
